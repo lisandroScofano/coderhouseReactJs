@@ -1,24 +1,27 @@
 import { CartWidget } from "./CartWidget"
 import logo from '../assets/logo.png';
+import { Link } from "react-router-dom";
 
 
 
 export const NavBar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-body-white">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Wine Commerce</a>
+                    <Link to="/">
+                        <img width={150} src="/logo.png" />
+                    </Link>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Tienda</a>
+                                <Link to="/tienda" className="nav-link">Tienda</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Nosotros</a>
+                                <Link to="/Nosotros" className="nav-link">Nosotros</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contacto</a>
+                                <Link to="/Contacto" className="nav-link">Contacto</Link>
                             </li>
                         </ul>
                     </div>
