@@ -1,13 +1,29 @@
-export const ItemCount = ({ nombreProducto, stock }) => {
+import { useState } from "react"
+
+export const ItemCount = ({ stock }) => {
+
+    const [count, setCount] = useState(1);
+
+    function onDecrease() {
+        if (count > 1) {
+            setCount(count - 1);
+        }
+    };
+
+    function onIncrease() {
+        if (stock && count < stock) {
+            setCount(count + 1);
+        }
+    }
+
     return (
         <>
-            <div className="row mb-3 mt-5 border">
+            <div className="row mb-3 mt-5">
                 <div className="col-2">
-                    <h3 className="pb-5 d-flex justify-content-center">{nombreProducto}</h3>
                     <div className="d-flex justify-content-center">
-                        <button className="btn btn-outline-primary">-</button>
-                        <span className="ps-5 pe-5">0</span>
-                        <button className="btn btn-outline-primary">+</button>
+                        <button className="btn btn-outline-primary" onClick={onDecrease}>-</button>
+                        <span className="ps-5 pe-5">{count}</span>
+                        <button className="btn btn-outline-primary" onClick={onIncrease}>+</button>
                     </div>
                 </div>
                 <div className="col-2">

@@ -10,12 +10,21 @@ export const NavBar = () => {
             <nav className="navbar navbar-expand-lg bg-body-white">
                 <div className="container-fluid">
                     <Link to="/">
-                        <img width={150} src="/logo.png" />
+                        <img width={150} src={logo} />
                     </Link>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link to="/tienda" className="nav-link">Tienda</Link>
+                                <Link to="/Malbec" className="nav-link">Malbec</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/Malbec" className="nav-link">Cabernet Franc</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/Malbec" className="nav-link">Chardonnay</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/Malbec" className="nav-link">Espumante</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/Nosotros" className="nav-link">Nosotros</Link>

@@ -1,86 +1,98 @@
 [
     {
         "id": 1,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "TERRAZAS GRAND MALBEC",
+        "price": 13400,
+        "description": "Combina aromas de frutos negros y notas de hierbas balsámicas y aromáticas. En el final se descubren notas de café y chocolate negro. En boca se revela audaz y fresco. Su acidez excepcional y taninos firmes y redondos garantizan un prolongado potencial de guarda.",
+        "category": "Malbec",
+        "image": "/images/terrazas-grand-malbec.webp"
     },
     {
         "id": 2,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "LAS PERDICES RESERVA MALBEC",
+        "price": 4437,
+        "description": "Color rojo violáceo muy intenso. Aromas a frutas rojas, frambuesa, acompañado con notas de vainilla y café aportados por la crianza en roble. Suave en boca, equilibrado, con notas de ciruelas, guindas, frutas rojas, violetas, chocolate, y café! Taninos suaves y maduros. Final de boca agradable y extenso.Color rojo violáceo muy intenso.",
+        "category": "Malbec",
+        "image": "/images/las-perdices-reserva-malbec.webp"
     },
     {
         "id": 3,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "PIATTELLI RESERVA MALBEC",
+        "price": 4327,
+        "description": "Recuerdos de grosella oscura y arándano, este vino es fresco pero tiene una terminación mineral. El acabado es fuerte y ofrece notas de chocolate amargo y pimienta.",
+        "category": "Malbec",
+        "image": "/images/piatelli-reserva-malbec.jpeg"
     },
     {
         "id": 4,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "PULENTA ESTATE SAUVIGNON BLANC",
+        "price": 2125,
+        "description": "Color amarillo verdoso brillante. Gran intensidad aromatica que recuerda a Pomelo y otras frutas cítricas. En boca su equilibrado balance en dulzura y acidez, realzan su personalidad frutal. Es un vino fresco y joven, excelente para acompañar mariscos y frutos de mar.",
+        "category": "Sauvignon Blanc",
+        "image": "/images/PULENTA-ESTATE-SAUVIGNON-BLANC.jpeg"
     },
     {
         "id": 5,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "LAS PERDICES RESERVA FUME SAUVIGNON BLANC",
+        "price": 2350,
+        "description": "Color amarillo intenso con matices verdosos. Aromas cítricos y sutiles notas de tostado y vainilla. En boca aparecen las notas de maracuyá, pomelo rosado y espárrago, acompañado de los aportes de la barrica. Buena acidez y final de boca.",
+        "category": "Sauvignon Blanc",
+        "image": "/images/LAS-PERDICES-RESERVA-FUME-SAUVIGNON-BLANC.webp"
     },
     {
         "id": 6,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "PULENTA ESTATE GRAN CABERNET FRANC",
+        "price": 36750,
+        "description": "De color rubí profundo, con gran intensidad aromática que recuerda a pimiento grillado, eucalipto y especias. Su entrada en boca es dulce y suave, gracias a la notable presencia de taninos redondos y maduros. Su paso por barrica de roble francés nueva durante 18 meses, le otorga un elegante y prolongado final.",
+        "category": "Cabernet Franc",
+        "image": "/images/PULENTA-ESTATE-GRAN-CABERNET-FRANC.jpeg"
     },
     {
         "id": 7,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "LAS PERDICES CHAMPENOISE METHODE BRUT",
+        "price": 5000,
+        "description": "Color amarillo dorado suave con reflejos brillantes. Espuma persistente, burbujas delicadas y finas. Aromas de miel, almendras, pan tostado y frutas. Suave en boca, buena acidez, elegancia y persistencia de notas de fruta. Buena frescura y complejidad.",
+        "category": "Espumante",
+        "image": "/images/LAS-PERDICES-CHAMPENOISE-METHODE-BRUT.webp"
     },
     {
         "id": 8,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "SALENTEIN ESPUMANTE EXTRA BRUT",
+        "price": 4000,
+        "description": "Salentein Extra Brut es un Cuvée Spéciale elaborado con uvas Chardonnay y Pinot Noir de parcelas seleccionadas de nuestra finca El Oasis en el Valle de Uco.",
+        "category": "Espumante",
+        "image": "/images/SALENTEIN-ESPUMANTE-EXTRA-BRUT.jpeg"
     },
     {
         "id": 9,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "FOND DE CAVE RESERVA CABERNET FRANC",
+        "price": 6080,
+        "description": "De color rojo rubí brillante, este vino entrega aromas especiados, destacándose la pimienta roja, el morrón verde asado y las frutas negras. En boca es dulce, con taninos amables. Frutado, presenta un final largo con notas de humo y caramelo.",
+        "category": "Cabernet Franc",
+        "image": "/images/FOND-DE-CAVE-RESERVA-CABERNET-FRANC.webp"
     },
     {
         "id": 10,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "MATIAS RICCITELLI FATHER MALBEC CAB FRANC",
+        "price": 35875,
+        "description": "Riccitelli & Father surge de la elaboración en conjunto entre Matías y su padre, Jorge Riccitelli, buscando potenciar al Malbec de viñedos viejos de zonas tradicionales, con la intensidad que el Cabernet Franc desarrolla en nuestros suelos de montaña. 80% Malbec plantado en 1927 sobre pie franco en Las Compuertas, Luján de Cuyo, sobre suelos franco-arcillosos.",
+        "category": "Cabernet Franc",
+        "image": "/images/MATIAS-RICCITELLI-FATHER-MALBEC-CAB-FRANC.webp"
     },
     {
         "id": 11,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "MALEANTE MALBEC",
+        "price": 2052,
+        "description": "En esta botella vas encontrar todo lo que esperás del Malbec de Valle de Uco: fuerza, intensidad y gran personalidad. No te defraudará. Varietal: MALBEC. %Alcohol: 13,65%. 6 meses de resposo en botella bajo luz, humedad y temperatura controladas, Temperatura de servicio: 16° a 18°C.",
+        "category": "Malbec",
+        "image": "/images/maleante-malbec.webp"
     },
     {
         "id": 12,
-        "title": ,
-        "price": ,
-        "description": ,
-        "image":
+        "title": "KILLKA ART WINE SAUVIGNON BLANC",
+        "price": 2787,
+        "description": "De color amarillo verdoso brillante, en nariz se presenta con notas cítricas como pomelo y limón, hierbas y duraznos maduros. En Boca, se comporta como un vino fresco con destacada acidez y con un largo final.",
+        "category": "Sauvignon Blanc",
+        "image": "/images/KILLKA-ART-WINE-SAUVIGNON-BLANC.webp"
     }
 ]
