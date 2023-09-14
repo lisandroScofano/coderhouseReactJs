@@ -1,22 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import productsJSON from "../products.json";
 import { ItemList } from "./ItemList";
-import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-const mockAPI = () => {
+const mockAPI = (varietalName) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(productsJSON);
+            console.log(varietalName);
+            if (varietalName !== undefined) {
+                const productosPorVarietal = productsJSON.filter((item) => item.category === varietalName);
+                resolve(productosPorVarietal)
+            } else {
+                resolve(productsJSON);
+            }
         }, 2000);
-    }, []);
+    });
 };
 
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
+    const { varietalName } = useParams();
 
     useEffect(() => {
-        mockAPI().then((data) => setProducts(data));
-    });
+        mockAPI(varietalName).then((data) => setProducts(data));
+    }, [varietalName]);
 
     return (
         <>

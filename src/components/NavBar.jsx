@@ -10,27 +10,21 @@ export const NavBar = () => {
             <nav className="navbar navbar-expand-lg bg-body-white">
                 <div className="container-fluid">
                     <Link to="/">
-                        <img width={150} src={logo} />
+                        <img width={150} src={logo} alt="logo empresa" />
                     </Link>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link to="/Malbec" className="nav-link">Malbec</Link>
+                                <Link to="/varietal/Malbec" className="nav-link">Malbec</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/Malbec" className="nav-link">Cabernet Franc</Link>
+                                <Link to="/varietal/CabFranc" className="nav-link">Cabernet Franc</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/Malbec" className="nav-link">Chardonnay</Link>
+                                <Link to="/varietal/SauvBlanc" className="nav-link">Sauvignon Blanc</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/Malbec" className="nav-link">Espumante</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/Nosotros" className="nav-link">Nosotros</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/Contacto" className="nav-link">Contacto</Link>
+                                <Link to="/varietal/Espumante" className="nav-link">Espumante</Link>
                             </li>
                         </ul>
                     </div>

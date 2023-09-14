@@ -28,32 +28,32 @@
         "title": "PULENTA ESTATE SAUVIGNON BLANC",
         "price": 2125,
         "description": "Color amarillo verdoso brillante. Gran intensidad aromatica que recuerda a Pomelo y otras frutas cítricas. En boca su equilibrado balance en dulzura y acidez, realzan su personalidad frutal. Es un vino fresco y joven, excelente para acompañar mariscos y frutos de mar.",
-        "category": "Sauvignon Blanc",
+        "category": "SauvBlanc",
         "image": "/images/PULENTA-ESTATE-SAUVIGNON-BLANC.jpeg"
     },
     {
         "id": 5,
-        "title": "LAS PERDICES RESERVA FUME SAUVIGNON BLANC",
+        "title": "LA FLOR SAUVIGNON BLANC",
         "price": 2350,
-        "description": "Color amarillo intenso con matices verdosos. Aromas cítricos y sutiles notas de tostado y vainilla. En boca aparecen las notas de maracuyá, pomelo rosado y espárrago, acompañado de los aportes de la barrica. Buena acidez y final de boca.",
-        "category": "Sauvignon Blanc",
-        "image": "/images/LAS-PERDICES-RESERVA-FUME-SAUVIGNON-BLANC.webp"
+        "description": "Nuestro Sauvignon Blanc presenta un color amarillo verdoso. De gran intensidad aromática que recuerda a pomelo y otros cítricos. Su equilibrado balance en dulzura y acidez realzan su personalidad frutal. Posee un final armónico, fresco y prolongado.",
+        "category": "SauvBlanc",
+        "image": "/images/LA-FLOR-SAUVIGNON-BLANC.jpeg"
     },
     {
         "id": 6,
         "title": "PULENTA ESTATE GRAN CABERNET FRANC",
         "price": 36750,
         "description": "De color rubí profundo, con gran intensidad aromática que recuerda a pimiento grillado, eucalipto y especias. Su entrada en boca es dulce y suave, gracias a la notable presencia de taninos redondos y maduros. Su paso por barrica de roble francés nueva durante 18 meses, le otorga un elegante y prolongado final.",
-        "category": "Cabernet Franc",
+        "category": "CabFranc",
         "image": "/images/PULENTA-ESTATE-GRAN-CABERNET-FRANC.jpeg"
     },
     {
         "id": 7,
-        "title": "LAS PERDICES CHAMPENOISE METHODE BRUT",
-        "price": 5000,
+        "title": "CHAMPAGNE KRUG GRAN CUVEE",
+        "price": 209450,
         "description": "Color amarillo dorado suave con reflejos brillantes. Espuma persistente, burbujas delicadas y finas. Aromas de miel, almendras, pan tostado y frutas. Suave en boca, buena acidez, elegancia y persistencia de notas de fruta. Buena frescura y complejidad.",
         "category": "Espumante",
-        "image": "/images/LAS-PERDICES-CHAMPENOISE-METHODE-BRUT.webp"
+        "image": "/images/CHAMPAGNE-KRUG-GRAN-CUVEE.webp"
     },
     {
         "id": 8,
@@ -65,34 +65,34 @@
     },
     {
         "id": 9,
-        "title": "FOND DE CAVE RESERVA CABERNET FRANC",
-        "price": 6080,
-        "description": "De color rojo rubí brillante, este vino entrega aromas especiados, destacándose la pimienta roja, el morrón verde asado y las frutas negras. En boca es dulce, con taninos amables. Frutado, presenta un final largo con notas de humo y caramelo.",
-        "category": "Cabernet Franc",
-        "image": "/images/FOND-DE-CAVE-RESERVA-CABERNET-FRANC.webp"
+        "title": "EL GRAN ENEMIGO CAB FRANC MALBEC",
+        "price": 25900,
+        "description": "El Gran Enemigo es un conjunto de cuatro uvas con una mayoría de Cabernet Franc, 73%. Adrianna y yo lo convierten en honor a la antigua usanza, donde Pomerol Cabernet Franc se mezcló con las otras variedades de Burdeos, dice Alejandro.",
+        "category": "CabFranc",
+        "image": "/images/EL GRAN ENEMIGO-CAB-FRANC-MALBEC.jpeg"
     },
     {
         "id": 10,
         "title": "MATIAS RICCITELLI FATHER MALBEC CAB FRANC",
         "price": 35875,
         "description": "Riccitelli & Father surge de la elaboración en conjunto entre Matías y su padre, Jorge Riccitelli, buscando potenciar al Malbec de viñedos viejos de zonas tradicionales, con la intensidad que el Cabernet Franc desarrolla en nuestros suelos de montaña. 80% Malbec plantado en 1927 sobre pie franco en Las Compuertas, Luján de Cuyo, sobre suelos franco-arcillosos.",
-        "category": "Cabernet Franc",
+        "category": "CabFranc",
         "image": "/images/MATIAS-RICCITELLI-FATHER-MALBEC-CAB-FRANC.webp"
     },
     {
         "id": 11,
-        "title": "MALEANTE MALBEC",
-        "price": 2052,
-        "description": "En esta botella vas encontrar todo lo que esperás del Malbec de Valle de Uco: fuerza, intensidad y gran personalidad. No te defraudará. Varietal: MALBEC. %Alcohol: 13,65%. 6 meses de resposo en botella bajo luz, humedad y temperatura controladas, Temperatura de servicio: 16° a 18°C.",
+        "title": "FABRE MONTMAYOU RESERVA MALBEC",
+        "price": 4300,
+        "description": "Fabre Montmayou Malbec Reserva pasa un 60% del vino por barrica de roble francés durante 12 meses. Podés acompañarlo con carnes rojas y especiadas, un fiel exponente del malbec mendocino con el toque europeo de Fabre Montayou.",
         "category": "Malbec",
-        "image": "/images/maleante-malbec.webp"
+        "image": "/images/FABRE-MONTMAYOU-RESERVA-MALBEC.webp"
     },
     {
         "id": 12,
         "title": "KILLKA ART WINE SAUVIGNON BLANC",
         "price": 2787,
         "description": "De color amarillo verdoso brillante, en nariz se presenta con notas cítricas como pomelo y limón, hierbas y duraznos maduros. En Boca, se comporta como un vino fresco con destacada acidez y con un largo final.",
-        "category": "Sauvignon Blanc",
+        "category": "SauvBlanc",
         "image": "/images/KILLKA-ART-WINE-SAUVIGNON-BLANC.webp"
     }
 ]
