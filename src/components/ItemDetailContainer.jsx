@@ -1,25 +1,20 @@
 import { useState, useEffect } from "react";
-import productsJSON from "../products.json";
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "./ItemDetail";
-
-const mockAPI = (id) => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (id !== undefined) {
-                const productoPorId = productsJSON.filter((item) => item.id == id);
-                resolve(productoPorId[0])
-            }
-        }, 2000);
-    });
-};
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 export const ItemDetailContainer = () => {
     const [product, setProduct] = useState([]);
     const { id } = useParams();
 
     useEffect(() => {
-        mockAPI(id).then((data) => setProduct(data));
+        const db = getFirestore();
+        const productoRef = doc(db, "productos", id);
+        getDoc(productoRef).then((snapshot) => {
+            if (snapshot.exists()) {
+                setProduct({ id: snapshot.id, ...snapshot.data() });
+            }
+        });
     }, [id]);
 
     return (

@@ -1,28 +1,23 @@
 import { useState, useEffect } from "react";
-import productsJSON from "../products.json";
 import { ItemList } from "./ItemList";
 import { useParams } from "react-router-dom";
-
-const mockAPI = (varietalName) => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log(varietalName);
-            if (varietalName !== undefined) {
-                const productosPorVarietal = productsJSON.filter((item) => item.category === varietalName);
-                resolve(productosPorVarietal)
-            } else {
-                resolve(productsJSON);
-            }
-        }, 2000);
-    });
-};
+import { collection, doc, getDocs, getFirestore, query, where } from "firebase/firestore";
 
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const { varietalName } = useParams();
 
     useEffect(() => {
-        mockAPI(varietalName).then((data) => setProducts(data));
+        const db = getFirestore();
+        let productsCollection = collection(db, "productos");
+        if (varietalName !== undefined) {
+            productsCollection = query(collection(db, "productos"), where("category", "==", varietalName));
+        }
+        getDocs(productsCollection).then((snapshot) => {
+            if (snapshot.size != 0) {
+                setProducts(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+            }
+        });
     }, [varietalName]);
 
     return (

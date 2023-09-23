@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const ItemCount = ({ stock }) => {
+export const ItemCount = ({ stock, confirmar }) => {
 
     const [count, setCount] = useState(1);
 
@@ -18,17 +18,15 @@ export const ItemCount = ({ stock }) => {
 
     return (
         <>
-            <div className="row mb-3 mt-5">
-                <div className="col-2">
-                    <div className="d-flex justify-content-center">
-                        <button className="btn btn-outline-primary" onClick={onDecrease}>-</button>
-                        <span className="ps-5 pe-5">{count}</span>
-                        <button className="btn btn-outline-primary" onClick={onIncrease}>+</button>
-                    </div>
+            <div className="mt-4">
+                <div className="d-flex justify-content-center">
+                    <button className="btn btn-outline-primary" onClick={onDecrease}>-</button>
+                    <span className="ps-5 pe-5">{count}</span>
+                    <button className="btn btn-outline-primary" onClick={onIncrease}>+</button>
                 </div>
-                <div className="col-2">
-                    <button className="btn btn-outline-primary">Agregar al carrito</button>
-                </div>
+            </div>
+            <div className="mt-4">
+                <button className="btn btn-outline-primary" onClick={() => confirmar(count)}>Agregar al carrito</button>
             </div>
         </>
     )
