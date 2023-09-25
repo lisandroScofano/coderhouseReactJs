@@ -42,7 +42,7 @@ export const ItemDetail = ({ product }) => {
                     <p className="card-text">{product.description}</p>
                     <h3 className="card-text">$ {product.price}</h3>
                     {cantidad > 0 ?
-                        <Link to="/cart"><button className="btn btn-primary mt-4" onClick={onConfirmar}>Finalizar compra</button></Link> :
+                        <Link to="/cart"><button className="btn btn-primary mt-4" onClick={onConfirmar}>Confirmar</button></Link> :
                         <ItemCount stock={product.stock} confirmar={onAdd} />}
                 </div>
             </div>
