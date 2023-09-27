@@ -13,7 +13,7 @@ export const Checkout = () => {
     const [buttonDisabled, setButtonDisabled] = useState(true);
 
 
-    const { cart, totalCartAmount } = useContext(CartContext);
+    const { cart, totalCartAmount, clear } = useContext(CartContext);
 
     function crearOrden() {
         const productos = cart;
@@ -30,6 +30,7 @@ export const Checkout = () => {
         const db = getFirestore();
         const ordenesRef = collection(db, "ordenes");
         addDoc(ordenesRef, order).then(result => setOrderId(result.id));
+        {clear()}
     }
     function verificarEmail() {
         if (email === email2) {
