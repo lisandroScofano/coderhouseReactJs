@@ -10,9 +10,13 @@ export function CartProvider({ children }) {
         if (!isInCart(producto.id)) {
             setCart(arr => [...arr, { ...producto, cantidad }])
         } else {
-            const indexProduct = cart.findIndex(prod => prod.id === producto.id);
-            cart[indexProduct].cantidad = cart[indexProduct].cantidad + cantidad;
-            setCart(arr => [...arr])//this is to update the numberItems()
+            const updatedCart = cart.map(prod => {
+                if (prod.id === producto.id) {
+                    return { ...producto, cantidad: prod.cantidad + cantidad };
+                }
+                return prod;
+            });
+            setCart(updatedCart)
         }
     }
     function removeItem(productoId) {
@@ -27,19 +31,17 @@ export function CartProvider({ children }) {
     }
 
     function numberItems() {
-        let count = 0;
-        cart.forEach(producto => {
-            count = count + producto.cantidad
-        });
+
+        var count = cart.reduce(function (acc, obj) { return acc + obj.cantidad; }, 0);
+
         return count;
     }
 
     function totalCartAmount() {
-        let total = 0;
-        cart.forEach(producto => {
-            total = parseInt(total + (producto.cantidad * producto.price));
-        });
-        return total;
+
+        var result = cart.reduce(function (acc, obj) { return acc + obj.price * obj.cantidad; }, 0);
+
+        return result;
     }
 
     return (

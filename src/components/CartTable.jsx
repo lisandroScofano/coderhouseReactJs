@@ -7,11 +7,10 @@ export const CartTable = ({ prods, viewOnlyOrder }) => {
     const { removeItem } = useContext(CartContext);
 
     function totalAmount() {
-        let total = 0;
-        prods.forEach(producto => {
-            total = parseInt(total + (producto.cantidad * producto.price));
-        });
-        return total;
+
+        var result = prods.reduce(function (acc, obj) { return acc + obj.price * obj.cantidad; }, 0);
+
+        return result;
     }
 
 

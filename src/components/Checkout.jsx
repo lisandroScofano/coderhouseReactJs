@@ -29,8 +29,9 @@ export const Checkout = () => {
         };
         const db = getFirestore();
         const ordenesRef = collection(db, "ordenes");
-        addDoc(ordenesRef, order).then(result => setOrderId(result.id));
-        {clear()}
+        addDoc(ordenesRef, order)
+            .then(result => setOrderId(result.id))
+            .then(() => clear());
     }
     function verificarEmail() {
         if (email === email2) {
@@ -55,7 +56,7 @@ export const Checkout = () => {
     } else {
         return (
             <>
-                <Cart />
+                <Cart skipCheckoutButton={true} />
                 <div className="container w-50 mt-5 text-center">
                     <h3>Complete los siguientes datos para confirmar su orden</h3>
                     <div className="container w-50 mt-5">

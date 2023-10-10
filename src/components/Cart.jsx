@@ -1,8 +1,9 @@
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext";
 import { CartTable } from "./CartTable";
+import { Link } from "react-router-dom";
 
-export const Cart = () => {
+export const Cart = ({ skipCheckoutButton }) => {
 
     const { cart, clear } = useContext(CartContext);
 
@@ -29,6 +30,7 @@ export const Cart = () => {
                     <button className="btn btn-danger ms-5" onClick={emptyCart}>Vaciar carrito</button>
                 </div>
                 <CartTable prods={cart} />
+                {skipCheckoutButton ? '' : <Link to="/checkout"><button className="btn btn-primary mt-4">Ir a Checkout</button></Link>}
             </div>
         </>
     )

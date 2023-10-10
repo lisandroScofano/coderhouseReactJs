@@ -1,6 +1,6 @@
 import { CartWidget } from "./CartWidget"
 import logo from '../assets/logo.png';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 
@@ -15,16 +15,16 @@ export const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link to="/varietal/Malbec" className="nav-link">Malbec</Link>
+                                <NavLink to="/varietal/Malbec" className="nav-link" >Malbec</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link to="/varietal/CabFranc" className="nav-link">Cabernet Franc</Link>
+                                <NavLink to="/varietal/CabFranc" className="nav-link">Cabernet Franc</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link to="/varietal/SauvBlanc" className="nav-link">Sauvignon Blanc</Link>
+                                <NavLink to="/varietal/SauvBlanc" className="nav-link">Sauvignon Blanc</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link to="/varietal/Espumante" className="nav-link">Espumante</Link>
+                                <NavLink to="/varietal/Espumante" className="nav-link">Espumante</NavLink>
                             </li>
                         </ul>
                     </div>

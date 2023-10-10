@@ -20,16 +20,17 @@ export const ItemDetail = ({ product }) => {
 
     const onAdd = (cant) => {
         setCantidad(cant);
+        confirmar(cant);
     };
 
-    const onConfirmar = () => {
+    const confirmar = (cant) => {
         const {id, title, price} = product;
         const producto = {
             id,
             title,
             price
         }
-        addItem(producto, cantidad)
+        addItem(producto, cant)
     }
 
     return (
@@ -42,7 +43,7 @@ export const ItemDetail = ({ product }) => {
                     <p className="card-text">{product.description}</p>
                     <h3 className="card-text">$ {product.price}</h3>
                     {cantidad > 0 ?
-                        <Link to="/cart"><button className="btn btn-primary mt-4" onClick={onConfirmar}>Confirmar</button></Link> :
+                        <Link to="/cart"><button className="btn btn-primary mt-4">Ir a Carrito de Compra</button></Link> :
                         <ItemCount stock={product.stock} confirmar={onAdd} />}
                 </div>
             </div>
